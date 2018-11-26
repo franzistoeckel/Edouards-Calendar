@@ -14,16 +14,20 @@
 		<link rel="stylesheet" type="text/css" href="css/style2.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/SantasSleigh/SantasSleigh.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script src="js/snowstorm.js"></script>
 	</head>
 	<body>
+			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
 
 				<div class="topnav">
-					 <nav class="topnav">
-				<a class="topnav" href="index.html">The story behind.</a>
-				<a class ="topnav" href="/html/">Introduction</a>
+					 <nav>
+				<a href="index.html">The story behind.</a>
+				<a href="/html/">Introduction</a>
 				</nav>
 				  </div>
-			
+					<div id="theSidebar" class="sidebar">
+						<button class="close-button fa fa-fw fa-close"></button>
+					</div>
 			<div id="theGrid" class="main">
 				<section class="grid">
 				<a class="grid__item" href="#">
@@ -31,7 +35,7 @@
 						<div class="loader"></div>
 						<span class="category">Franzis favourite dish as a child!</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/potato_13.jpg" alt="potato" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/potato_13.jpg" alt="potato" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 13th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 20 minutes cooking </span>
 						</div>
@@ -41,7 +45,7 @@
 						<div class="loader"></div>
 						<span class="category">Amine's favourite salad</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/artichokes_17.jpg"width="50" height="50" alt="artichoke" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/artichokes_17.jpg"width="50" height="50" alt="artichoke" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 17th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 20 minutes prep</span>
 						</div>
@@ -51,7 +55,7 @@
 						<div class="loader"></div>
 						<span class="category">Something asian accompanied by a pseudo nut</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/peanut_1.jpg" Height="50" width="50"alt="peanut" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/peanut_1.jpg" Height="50" width="50"alt="peanut" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 1st December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 40 minutes cooking</span>
 						</div>
@@ -61,7 +65,7 @@
 						<div class="loader"></div>
 						<span class="category">The best spring dish -sorry!</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/asparagus_20.jpg" Height="50" width="50" alt="asparagus" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/asparagus_20.jpg" Height="50" width="50" alt="asparagus" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 20th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 30 minutes cooking</span>
 						</div>
@@ -71,7 +75,7 @@
 						<div class="loader"></div>
 						<span class="category">Pastas' best friend</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/basil_9.jpg" Height="50" width="50" alt="basil" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/basil_9.jpg" Height="50" width="50" alt="basil" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 9th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 10 minutes prep</span>
 						</div>
@@ -81,7 +85,7 @@
 						<div class="loader"></div>
 						<span class="category">Franzi's favourite dish</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/5.JPG" width="50" height="50" alt="Franzi" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/5.JPG" width="50" height="50" alt="Franzi" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 5th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 60 minutes cooking</span>
 						</div>
@@ -91,7 +95,7 @@
 						<div class="loader"></div>
 						<span class="category">A taste of France</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/sun-dried-tomatoes_22.jpg" width="50" height="50" alt="sun dried tomatoes" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/sun-dried-tomatoes_22.jpg" width="50" height="50" alt="sun dried tomatoes" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 22nd December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 60 minutes cooking</span>
 						</div>
@@ -101,7 +105,7 @@
 						<div class="loader"></div>
 						<span class="category">Germany at it's weirdest</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/spinach_6.jpg" width="50" height="50" alt="spinach" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/spinach_6.jpg" width="50" height="50" alt="spinach" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 45 minutes cooking</span>
 						</div>
@@ -111,7 +115,7 @@
 						<div class="loader"></div>
 						<span class="category">Can it even get any better?!</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/5.JPG" width="50" height="50" alt="author01" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/5.JPG" width="50" height="50" alt="author01" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 24th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> a bit of your time</span>
 						</div>
@@ -121,7 +125,7 @@
 						<div class="loader"></div>
 						<span class="category">Hipster food.</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/pumpkins_4.jpg" width="50" height="50" alt="pumpkin" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/pumpkins_4.jpg" width="50" height="50" alt="pumpkin" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 4th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 30 minutes cooking</span>
 						</div>
@@ -131,7 +135,7 @@
 						<div class="loader"></div>
 						<span class="category">Kumara.</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/sweet potato_18.jpg" width="50" height="50" alt="Sweet potato" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/sweet potato_18.jpg" width="50" height="50" alt="Sweet potato" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>18th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>30 minutes cooking</span>
 						</div>
@@ -141,7 +145,7 @@
 						<div class="loader"></div>
 						<span class="category">finally a breakfast food!</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/Hazelnuts_11.jpg" width="50" height="50" alt="Hazelnuts" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/Hazelnuts_11.jpg" width="50" height="50" alt="Hazelnuts" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 11th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>30 minutes prep</span>
 						</div>
@@ -151,7 +155,7 @@
 						<div class="loader"></div>
 						<span class="category">lets go to the middle east</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/eggplant_7.jpg" width="50" height="50" alt="eggplant" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/eggplant_7.jpg" width="50" height="50" alt="eggplant" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 7th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 90 minutes prep</span>
 						</div>
@@ -161,7 +165,7 @@
 						<div class="loader"></div>
 						<span class="category">Viva Italia!</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/Tomatoes_12.jpg" width="50" height="50" alt="tomato" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/Tomatoes_12.jpg" width="50" height="50" alt="tomato" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>12th Decemeber</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>60 mins-infinity</span>
 						</div>
@@ -171,7 +175,7 @@
 						<div class="loader"></div>
 						<span class="category">"What you made is delicious!"</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/goat_cheese_21.jpg" width="50" height="50" alt="goat cheese" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/goat_cheese_21.jpg" width="50" height="50" alt="goat cheese" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>21st December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>60 minutes prep</span>
 						</div>
@@ -181,7 +185,7 @@
 						<div class="loader"></div>
 						<span class="category">Let's celebrate the polish heritage</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/sour_cream_8.jpg" width="50" height="50" alt="sour cream" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/sour_cream_8.jpg" width="50" height="50" alt="sour cream" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>8th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>120 minutes prep</span>
 						</div>
@@ -191,7 +195,7 @@
 						<div class="loader"></div>
 						<span class="category">The veggie version of a classic</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/onions_16.jpg" width="50" height="50" alt="oninons" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/onions_16.jpg" width="50" height="50" alt="oninons" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>16th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>takes some time...</span>
 						</div>
@@ -201,7 +205,7 @@
 						<div class="loader"></div>
 						<span class="category">High as a kite</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/courgette_2.jpeg" width="50" height="50" alt="courgette" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/courgette_2.jpeg" width="50" height="50" alt="courgette" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>2nd December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 20 minutes cooking</span>
 						</div>
@@ -211,7 +215,7 @@
 						<div class="loader"></div>
 						<span class="category">possible the favourte food of Mahatma Ghandi</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/red_lentils_19.jpg" width="50" height="50" alt="red lentils" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/red_lentils_19.jpg" width="50" height="50" alt="red lentils" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 19th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 45 minutes cooking</span>
 						</div>
@@ -221,7 +225,7 @@
 						<div class="loader"></div>
 						<span class="category">The dish that made me go to EDEKA twice.</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/mushrooms_15.jpg" width="50" height="50" alt="mushrooms" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/mushrooms_15.jpg" width="50" height="50" alt="mushrooms" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 15th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 40 minutes cooking</span>
 						</div>
@@ -231,7 +235,7 @@
 						<div class="loader"></div>
 						<span class="category">Zero fucks were given (or plenty...)</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/brown_lentils_3.jpg" width="50" height="50" alt="brown lentil" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/brown_lentils_3.jpg" width="50" height="50" alt="brown lentil" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>3rd December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>20 minutes prep</span>
 						</div>
@@ -241,7 +245,7 @@
 						<div class="loader"></div>
 						<span class="category">The dish to celebrate that you finally have an oven!</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/beetroot_10.jpg" width="50" height="50" alt="beetroot" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/beetroot_10.jpg" width="50" height="50" alt="beetroot" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>10th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>50 minutes baking</span>
 						</div>
@@ -251,7 +255,7 @@
 						<div class="loader"></div>
 						<span class="category">My go to dish to impress people, but its lazy version</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/spring_onion_23.jpg" width="50" height="50" alt="spring onions" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/spring_onion_23.jpg" width="50" height="50" alt="spring onions" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i>23rd December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>40 minutes cooking</span>
 						</div>
@@ -261,7 +265,7 @@
 						<div class="loader"></div>
 						<span class="category">Are they pancakes or are they not?</span>
 						<div class="meta meta--preview">
-							<img class="meta__avatar" src="./img/pictures calendar/avocado_14.jpg" width="50" height="50" alt="avocado" /> 
+							<img class="meta__avatar" src="./img/pictures calendar/avocado_14.jpg" width="50" height="50" alt="avocado" />
 							<span class="meta__date"><i class="fa fa-calendar-o"></i> 14th December</span>
 							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>20 minutes cooking</span>
 						</div>
@@ -272,13 +276,11 @@
 						<article class="content__item">
 							<h2><span class="category category--full">Franzis favourite dish as a child</span></h2>
 							<h3 class="title title--full">13</h3>
-							<div class="meta meta--full">
-								<img src="./img/pictures calendar/potato_13.jpg">
+							<div class="meta meta--full"> <div class="meta--wrapper">
+								<img class="meta__avatar"  src="./img/pictures calendar/potato_13.jpg">
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 13th December</span><br>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 20 minutes cooking</span>
-							
-									<nav class="article-nav">
-										</nav>
+							</div>
 							</div>
 							<p>I admit this is very, very weird, almost ludicrous.</p><br><p> I always wished to get this dish. All the fucking time! Still, it’s one of my go to dishes if I don’t know what to eat and I made it for Amine once and he didn’t hate it. Which at the end let me to include it into this list of mostly a bit more exiting and interesting recipes.</p><br>
 							<p><strong>You need:</strong></p>
@@ -305,12 +307,11 @@
 						<article class="content__item">
 							<h2><span class="category category--full">Amine's favourite salad</span></h2>
 							<h3 class="title title--full">17</h3>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/artichokes_17.jpg" alt="artichokes" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i>17th December</span><br>
 								<span class="meta__reading-time"><i class="fa fa-clock-o">20 minutes prep</i></span>
-									<nav class="article-nav">
-									</nav>
+							</div>
 							</div>
 							<p>I don’t know whether this should actually qualify as a recipe, considering that it just contains everything I was able to find in the fridges of LuWu</p><br>
 							<p>Perhaps it doesn’t even taste that nice if half the ingredients are not already above the date they should be eaten by. Anyhow, I’ll type it down for you, to make you decide yourself. It’s definitely nice to take it to work. </p><br>
@@ -332,8 +333,8 @@
 									<li>yoghurt</li>
 									<li>mint</li>
 									<li>lemon juice</li>
-									</ul>	
-							</ul>		
+									</ul>
+							</ul>
 						</ul>
 						<p><strong>To do:</strong></p>
 						<ol>
@@ -353,11 +354,12 @@
 						<article class="content__item">
 							<span class="category category--full">Something asian, accompanied by a pseudo nut.</span>
 							<h2 class="title title--full">1</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/peanut_1.jpg" alt="peanut">
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 1st December</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>40 minutes cooking</span>
-								</nav>
+								</div>
+
 							</div>
 							<p>Whoa, first day and instantly one of my favourites, you can be insanely happy I share with you, darling!</p><br>
 							<p><strong>You need:</strong></p>
@@ -380,7 +382,7 @@
 								<li>Cut ½ cucumber in pieces (if you want to, take seeds out)</li>
 								<li>Take a bowl arrange: rice noodles, boiled veggis, cucumber and uncooked carrot (for crunchiness) </li>
 								<li>ENJOY!</li>
-							</ol>							
+							</ol>
 					<p>Song to listen to: I recommend traditional Vietnamese music on Youtube!</p>
 					<p>Drink: Vietnamese coffee! Or Singha beer (I know it’s Thai but it’s the only southeast Asian brand I’ve ever seen in stores in Europe)</p>
 				</article>
@@ -388,11 +390,11 @@
 						<article class="content__item">
 							<span class="category category--full">The best spring dish- sorry!</span>
 							<h2 class="title title--full">20</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/asparagus_20.jpg" alt="asparagus" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 20th December</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>30 minutes cooking</span>
-								
+							</div>
 							</div>
 							<p>>Joris read this title and asked me what its supposed to mean. So apparently I am the only one realising that it is not spring right now… Anyhow, this dish contains asparagus and I’m a big supporter of SPARGELZEIT. I know that nowadays asparagus is available the whole year round but I’m fine with only being able to buy it one month per year. During this time, I’d probably make this dish 10 times. It’s easy, quickly prepared and get be eaten warm and cold which makes it perfect for work!</p>
 							<p>Enough said, here it comes:</p>
@@ -404,17 +406,17 @@
 								<li>pasta (this time short pasta, even though I hate it)</li>
 								<li>lemon</li>
 									<li>A nice bunch of arugula</li>
-									<li>cheese</li> 
-									<li>onions</li> 
+									<li>cheese</li>
+									<li>onions</li>
 									<li>S+p</li>
 									<li>Balsamic vinegar, olive oil</li>
 									<li>parsley</li>
-							</ul>		
-						<p><strong>To do:</strong></p>	
+							</ul>
+						<p><strong>To do:</strong></p>
 						<ol>
 							<li>Cut the woody ends of the asparagus and cut the rest into 2-3 cm long pieces</li>
-							<li>Heat a pan with olive oil and fry the asparagus for somewhat 5-10 minutes (it mostly depends on how you like it, I prefer the asparagus to still be crunchy)</li>	
-							<li>boil the pasta al dente</li>		
+							<li>Heat a pan with olive oil and fry the asparagus for somewhat 5-10 minutes (it mostly depends on how you like it, I prefer the asparagus to still be crunchy)</li>
+							<li>boil the pasta al dente</li>
 							<li>Cut feta cheese in cubes, do the same with spring onions and parsley</li>
 							<li>When the asparagus is done, deglaze it with a few tablespoons of balsamic vinegar, add as much honey as you want, depending on how much vinegar you added, it should be a balanced taste of sweet and sour</li>
 							<li>Wash the arugula and tear it into halves</li>
@@ -424,14 +426,15 @@
 							<p>Song to listen to: The kinks- I’m not like everybody else (Sorry again, that having me as a girlfriend is such a hassle sometimes!)</p>
 							<p>To drink: Espresso Martini maybe? (I love you!) (You, not the drink!!!!)</p>
 						</article>
-						
+
 						<article class="content__item">
 							<span class="category category--full">Pastas best friend.</span>
 							<h2 class="title title--full">9</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/basil_9.jpg" alt="basil" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i>9th December</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>10 minutes prep</span>
+							</div>
 							</div>
 							<p>Primitive man is known to us by the stages of development through which he has passed: that is, through the inanimate monuments and implements which he has left behind for us, through our knowledge of his art, his religion and his attitude towards life, which we have received either directly or through the medium of legends, myths and fairy tales; and through the remnants of his ways of thinking that survive in our own manners and customs. </p>
 							<p>Moreover, in a certain sense he is still our contemporary: there are people whom we still consider more closely related to primitive man than to ourselves, in whom we therefore recognize the direct descendants and representatives of earlier man. We can thus judge the so-called savage and semi-savage races; their psychic life assumes a peculiar interest for us, for we can recognize in their psychic life a well-preserved, early stage of our own development.
@@ -445,10 +448,11 @@
 						<article class="content__item">
 							<span class="category category--full">Franzi's favourite dish.</span>
 							<h2 class="title title--full">5</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/5.JPG" alt="Franzi" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i>5th December</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>60 minutes cooking</span>
+							</div>
 							</div>
 
 							<p><strong>THIS IS MY BIRTHDAY!!!!!!!!!!!!!!!!</strong></p>
@@ -460,14 +464,14 @@
 						<ul>
 							<li>one whole chicken</li>
 							<li>soup vegetables – carrots, celery, leek, onion </li>
-							<li>flour</li>	 
+							<li>flour</li>
 							<li>peas</li>
 							<li>asparagus (if it’s the season)</li>
 							<li>juice of a lemon</li>
 							<li>parsley</li>
 							<li>s+p</li>
 						</ul>
-						
+
 					<p><strong>To do:</strong></p>
 						<ol>
 							<li>Fry an onion in a bit of oil, add carrot, leek and celery</li>
@@ -487,27 +491,29 @@
 						<p>Song to listen to: Hier kommt Alex – Die Toten Hosen (if you ask I am going to explain why)</p>
 						<p>Drink: Ur-Krostitzer or Apfelschorle</p>
 						<p><em>Special advice: Leftovers are amazing the next day if you put them in a tiny bowl, put cheese on top and bake them in the oven </em></p>
-								
-						
-						</article>		
+
+
+						</article>
 						<article class="content__item">
 							<span class="category category--full">A taste of France</span>
 							<h2 class="title title--full">22</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/sun-dried-tomatoes_22.jpg" alt="sund dried tomatoes" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i>22nd December</span>
-								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>60 minutes cooking</span>	
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>60 minutes cooking</span>
+							</div>
 							</div>
 							<p><strong></strong></p>
-							
+
 						</article>
 						<article class="content__item">
 							<span class="category category--full">Germany at it's weirdest.</span>
 							<h2 class="title title--full">6</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/spinach_6.jpg" alt="spinach" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6th Decemeber</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>45 minutes cooking</span>
+							</div>
 							</div>
 							<p>Definitely one of my favourite dishes! Traditionally eaten in south Germany and Austria or while skiing. I took the challenge and made them myself and it turned out great. So here’s the recipe. </p>
 							<p><strong>You need:</strong></p>
@@ -533,7 +539,7 @@
 								<li>Cut bread in roughly 1 centimetre pieces, cut onion and garlic in cubes</li>
 								<li>Fry garlic and onion in butter</li>
 								<li>Mix spinach, bread, garlic, onion, spices and milk</li>
-								<li>Let sit for 30 mins</li>	
+								<li>Let sit for 30 mins</li>
 								<li>Boil water in BIG pot</li>
 								<li>Form dumplings out of dough (please check consistency, if you feel like it’s still too soft, add as much flour as needed)</li>
 								<li>Boil in water until the dumplings flood</li>
@@ -550,31 +556,33 @@
 						<article class="content__item">
 							<span class="category category--full">Can it get even better?!</span>
 							<h2 class="title title--full">24</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/5.JPG" alt="me cooking" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 24th December</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>a few hours of your time</span>
 							</div>
+							</div>
 							<p>Unfortunately this is the last day of your very personal advent calendar, I hope you enjoyed the past 24 days!</p><br>
-							<p>Obviously the last day somehow has to be special. To me there is only one last possibility left to top everything else I wrote before.</p> 
+							<p>Obviously the last day somehow has to be special. To me there is only one last possibility left to top everything else I wrote before.</p>
 							<p>Possibly, you are opening this advent calendar door right now, while lying next to me in my bed in Nottingham. In a few hours we will have to board a plane to celebrate Christmas together in Germany. If there is something I am very certain about than that this Christmas will be one of the most special one’s ever. I’m glad that we’ll be able to spend time together and also its exciting that we’ll see three countries together within just a few days. I genuinely like the way our life’s going right now. This story is being written while sitting in a plane, on the way from Amsterdam back to Birmingham. I forgot my keys at yours. I assume that’s what’s going to happen quite often within the next few years. I’ll forget stuff, I’ll miss trains, busses and (hopefully not) planes. I’ll spend senseless amounts of money and time, I’ll have to learn how to study in public transport and I should download more music on Spotify. This weekend was the first real trial (at least to me) how having a long distance relationship will be.</p>
 							<p>You can believe me, that I was genuinely concerned on my way here (I believe that’s even noticeable in the calendar entry of the 20th December). Will all this hassle be worth it? Will the feeling be the same? Has something changed? </p> <br>
 							<p>After spending the last weekend together with you I can confidently say that it definitely is. I enjoyed every second and moment, and I won’t doubt a single second to do it again and again and again. (Except for forgetting my keys possibly…)</p><br>
 							<p>It is a bit sad that this is the last calendar entry ever, I liked writing down my thoughts and connecting them with some recipes. I hope you had as much fun reading as I had writing, and maybe I’ll find another medium to express myself in the future. We’ll see. Nevertheless, I still owe you a recipe, right? Or maybe I don’t. I can imagine that you already have an idea of what’s coming, since I asked you for a few hours of your time. This time it won’t be you having to cook, this time you are officially invited to a three course menu made by me. The decision about when this will happen is entirely on you, just give me a few days’ notice please!</p><br>
 							<p><strong>ENJOY &amp; MERRY CHRISTMAS!</strong></p>
-															
 
-							
+
+
 						</article>
 						<article class="content__item">
 							<span class="category category--full">Hipster food.</span>
 							<h2 class="title title--full">4</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/pumpkins_4.jpg" alt="pumpkin" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i>4th December</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>30 minutes cooking</span>
 							</div>
-							
+							</div>
+
 							<p>Another dish we ate together (even though I think I made this particular one without coconut milk) on one of the many amazing evenings we spent at your place. The next day I took the leftovers to work, driving bra-less on my bike balancing the leaking soup in one hand and trying to control my bike with the other one. Shit, I deeply miss driving this road with my bicycle and I almost miss the occasional walk of shame (or pride) from yours to mine.</p><br>
 							<p><Strong>You need:</Strong></p>
 								<ul>
@@ -602,7 +610,7 @@
 									<li>Serve soup with bread on top</li>
 									<li>ENJOY!</li>
 								</ol>
-						
+
 								<p>Song to listen to: Lea – Louise Attaque (just because it is a French song and I am very sure we were listening to French music this evening, everything else work as well as this one, obviously)</p>
 								<p>Drink: white wine</p>
 
@@ -610,11 +618,11 @@
 						<article class="content__item">
 							<span class="category category--full">Kumara.</span>
 							<h2 class="title title--full">18</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/sweet potato_18.jpg" alt="sweet potato" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i>18th Decemeber</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>30 minutes cooking</span>
-									
+							</div>
 							</div>
 							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
 							<p>This becomes even plainer in the case of a guilty conscience, where we become aware of the inner condemnation of such acts which realized some of our definite wish impulses. Confirmation seems superfluous here; whoever has a conscience must feel in himself the justification of the condemnation, and the reproach for the accomplished action. But this same character is evinced by the attitude of savages towards taboo. Taboo is a command of conscience, the violation of which causes a terrible sense of guilt which is as self-evident as its origin is unknown[89].</p>
@@ -625,18 +633,19 @@
 							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
 						</article>
 
-						
+
 						<article class="content__item">
 							<span class="category category--full">Finally a breakfast food.</span>
 							<h2 class="title title--full">11</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="./img/pictures calendar/Hazelnuts_11.jpg" alt="Hazelnuts" />
 								<span class="meta__date"><i class="fa fa-calendar-o"></i>8th Decemeber</span>
 								<span class="meta__reading-time"><i class="fa fa-clock-o"></i>30 minutes preaparation</span>
-								
+							</div>
+							</div>
 							<p>As you might have recognised every dish so far was supposed to be eaten for lunch or dinner and as far as I’m concerned no other breakfast food will come. You might ask yourself why? Easy peasy lemon-squezzy answer! YOU ARE THE KING OF BREAKFAST!
-								What am I supposed to write down, when talking to the master of brunch? The emperor of scrambled eggs? The true ruler of ripe avocados? The lord of coffee? (Fuck, it was hard to find so many synonyms!)  
-								And still I found something, you might find it useful, or you might not but I think its worth a try. I’ve made it before and I think it’s quite nice because you can choose what to put in there and what not. 
+								What am I supposed to write down, when talking to the master of brunch? The emperor of scrambled eggs? The true ruler of ripe avocados? The lord of coffee? (Fuck, it was hard to find so many synonyms!)
+								And still I found something, you might find it useful, or you might not but I think its worth a try. I’ve made it before and I think it’s quite nice because you can choose what to put in there and what not.
 								</p><br>
 								<p>So here is a recipe for homemade ranola.<p>
 								<p><strong>You need:</strong></p>
@@ -651,12 +660,12 @@
 										<li>A pinch of salt</li>
 										<li>80g coconut oil</li>
 										<li>Optional: 100g chocolate and/or	100g dried fruits (cranberries, cherries, gojis, …)</li>
-								</ul>	
+								</ul>
 						</article>
 						<article class="content__item">
 							<span class="category category--full">Stories for humans</span>
 							<h2 class="title title--full">On Humans &amp; other Beings</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
 								<span class="meta__author">Matthew Walters</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
@@ -668,6 +677,7 @@
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
 							</div>
+							</div>
 							<p>I am fully aware of the shortcomings in these essays. I shall not touch upon those which are characteristic of first efforts at investigation. The others, however, demand a word of explanation.</p>
 							<p>The four essays which are here collected will be of interest to a wide circle of educated people, but they can only be thoroughly understood and judged by those who are really acquainted with psychoanalysis as such. It is hoped that they may serve as a bond between students of ethnology, philology, folklore and of the allied sciences, and psychoanalysts; they cannot, however, supply both groups the entire requisites for such co-operation. They will not furnish the former with sufficient insight into the new psychological technique, nor will the psychoanalysts acquire through them an adequate command over the material to be elaborated. Both groups will have to content themselves with whatever attention they can stimulate here and there and with the hope that frequent meetings between them will not remain unproductive for science.</p>
 							<p>The two principal themes, totem and taboo, which give the name to this small book are not treated alike here. The problem of taboo is presented more exhaustively, and the effort to solve it is approached with perfect confidence. The investigation of totemism may be modestly expressed as: “This is all that psychoanalytic study can contribute at present to the elucidation of the problem of totemism.” This difference in the treatment of the two subjects is due to the fact that taboo still exists in our midst. To be sure, it is negatively conceived and directed to different contents, but according to its psychological nature, it is still nothing else than Kant’s ‘Categorical Imperative’, which tends to act compulsively and rejects all conscious motivations. On the other hand, totemism is a religio-social institution which is alien to our present feelings; it has long been abandoned and replaced by new forms. In the religions, morals, and customs of the civilized races of to-day it has left only slight traces, and even among those races where it is still retained, it has had to undergo great changes. The social and material progress of the history of mankind could obviously change taboo much less than totemism.</p>
@@ -678,7 +688,7 @@
 						<article class="content__item">
 							<span class="category category--full">Love &amp; Hate</span>
 							<h2 class="title title--full">The Things we Lost in the Fire</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
 								<span class="meta__author">Christian Belverde</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 7 Apr</span>
@@ -689,6 +699,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
 							<p>The slip of the tongue shows that on account of unconscious inhibitions the individual concerned is unable to express his true thoughts; the dream is a distorted or plain expression of those wishes which are prohibited in the waking states, and the witticism, owing to its veiled or indirect way of expression, enables the individual to obtain pleasure from forbidden sources. But whereas dreams, witticisms, and faulty actions give evidences of inner conflicts which the individual overcomes, the neurotic or psychotic symptom is the result of a failure and represents a morbid adjustment.</p>
@@ -701,7 +712,7 @@
 						<article class="content__item">
 							<span class="category category--full">Nutrition</span>
 							<h2 class="title title--full">What Goes Around Comes Around</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
 								<span class="meta__author">Carol Freeman</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -712,6 +723,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>Primitive man is known to us by the stages of development through which he has passed: that is, through the inanimate monuments and implements which he has left behind for us, through our knowledge of his art, his religion and his attitude towards life, which we have received either directly or through the medium of legends, myths and fairy tales; and through the remnants of his ways of thinking that survive in our own manners and customs. </p>
 							<p>Moreover, in a certain sense he is still our contemporary: there are people whom we still consider more closely related to primitive man than to ourselves, in whom we therefore recognize the direct descendants and representatives of earlier man. We can thus judge the so-called savage and semi-savage races; their psychic life assumes a peculiar interest for us, for we can recognize in their psychic life a well-preserved, early stage of our own development.
@@ -724,7 +736,7 @@
 						<article class="content__item">
 							<span class="category category--full">Life &amp; Death</span>
 							<h2 class="title title--full">Hope for Amy Walters</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
 								<span class="meta__author">Sandra Paulson</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -735,6 +747,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>In contrast to this, our discussion readily shows that the double meaning in question belonged to the word taboo from the very beginning and that it serves to designate a definite ambivalence as well as everything which has come into existence on the basis of this ambivalence. </p>
 							<p>Taboo is itself an ambivalent word and by way of supplement we may add that the established meaning of this word might of itself have allowed us to guess what we have found as the result of extensive investigation, namely, that the taboo prohibition is to be explained as the result of an emotional ambivalence. A study of the oldest languages has taught us that at one time there were many such words which included their own contrasts so that they were in a certain sense ambivalent, though perhaps not exactly in the same sense as the word taboo[88]. Slight vocal modifications of this primitive word containing two opposite meanings later served to create a separate linguistic expression for the two opposites originally united in one word.</p>
@@ -747,7 +760,7 @@
 						<article class="content__item">
 							<span class="category category--full">Nature vs. Nurture</span>
 							<h2 class="title title--full">My Father told me...</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
 								<span class="meta__author">Leila Nastafi</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -758,6 +771,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
 							<p>This becomes even plainer in the case of a guilty conscience, where we become aware of the inner condemnation of such acts which realized some of our definite wish impulses. Confirmation seems superfluous here; whoever has a conscience must feel in himself the justification of the condemnation, and the reproach for the accomplished action. But this same character is evinced by the attitude of savages towards taboo. Taboo is a command of conscience, the violation of which causes a terrible sense of guilt which is as self-evident as its origin is unknown[89].</p>
@@ -770,7 +784,7 @@
 						<article class="content__item">
 							<span class="category category--full">Neuroscience</span>
 							<h2 class="title title--full">What Happens in the Brain?</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/6.png" alt="author06" />
 								<span class="meta__author">William Green</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -782,6 +796,7 @@
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
 							</div>
+							</div>
 							<p>I am fully aware of the shortcomings in these essays. I shall not touch upon those which are characteristic of first efforts at investigation. The others, however, demand a word of explanation.</p>
 							<p>The four essays which are here collected will be of interest to a wide circle of educated people, but they can only be thoroughly understood and judged by those who are really acquainted with psychoanalysis as such. It is hoped that they may serve as a bond between students of ethnology, philology, folklore and of the allied sciences, and psychoanalysts; they cannot, however, supply both groups the entire requisites for such co-operation. They will not furnish the former with sufficient insight into the new psychological technique, nor will the psychoanalysts acquire through them an adequate command over the material to be elaborated. Both groups will have to content themselves with whatever attention they can stimulate here and there and with the hope that frequent meetings between them will not remain unproductive for science.</p>
 							<p>The two principal themes, totem and taboo, which give the name to this small book are not treated alike here. The problem of taboo is presented more exhaustively, and the effort to solve it is approached with perfect confidence. The investigation of totemism may be modestly expressed as: “This is all that psychoanalytic study can contribute at present to the elucidation of the problem of totemism.” This difference in the treatment of the two subjects is due to the fact that taboo still exists in our midst. To be sure, it is negatively conceived and directed to different contents, but according to its psychological nature, it is still nothing else than Kant’s ‘Categorical Imperative’, which tends to act compulsively and rejects all conscious motivations. On the other hand, totemism is a religio-social institution which is alien to our present feelings; it has long been abandoned and replaced by new forms. In the religions, morals, and customs of the civilized races of to-day it has left only slight traces, and even among those races where it is still retained, it has had to undergo great changes. The social and material progress of the history of mankind could obviously change taboo much less than totemism.</p>
@@ -792,7 +807,7 @@
 						<article class="content__item">
 							<span class="category category--full">Food Ethics</span>
 							<h2 class="title title--full">Tasty Labrador Bacon</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/7.png" alt="author07" />
 								<span class="meta__author">Peter M. Schuster</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -803,6 +818,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
 							<p>This becomes even plainer in the case of a guilty conscience, where we become aware of the inner condemnation of such acts which realized some of our definite wish impulses. Confirmation seems superfluous here; whoever has a conscience must feel in himself the justification of the condemnation, and the reproach for the accomplished action. But this same character is evinced by the attitude of savages towards taboo. Taboo is a command of conscience, the violation of which causes a terrible sense of guilt which is as self-evident as its origin is unknown[89].</p>
@@ -815,7 +831,7 @@
 						<article class="content__item">
 							<span class="category category--full">Philosophy</span>
 							<h2 class="title title--full">Ignorance is Bliss</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/8.png" alt="author08" />
 								<span class="meta__author">Matthew Walters</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -826,6 +842,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>In contrast to this, our discussion readily shows that the double meaning in question belonged to the word taboo from the very beginning and that it serves to designate a definite ambivalence as well as everything which has come into existence on the basis of this ambivalence. </p>
 							<p>Taboo is itself an ambivalent word and by way of supplement we may add that the established meaning of this word might of itself have allowed us to guess what we have found as the result of extensive investigation, namely, that the taboo prohibition is to be explained as the result of an emotional ambivalence. A study of the oldest languages has taught us that at one time there were many such words which included their own contrasts so that they were in a certain sense ambivalent, though perhaps not exactly in the same sense as the word taboo[88]. Slight vocal modifications of this primitive word containing two opposite meanings later served to create a separate linguistic expression for the two opposites originally united in one word.</p>
@@ -838,7 +855,7 @@
 						<article class="content__item">
 							<span class="category category--full">Morality &amp; History</span>
 							<h2 class="title title--full">Looking Through a Telescope</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
 								<span class="meta__author">Carol Freeman</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -849,6 +866,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>Primitive man is known to us by the stages of development through which he has passed: that is, through the inanimate monuments and implements which he has left behind for us, through our knowledge of his art, his religion and his attitude towards life, which we have received either directly or through the medium of legends, myths and fairy tales; and through the remnants of his ways of thinking that survive in our own manners and customs. </p>
 							<p>Moreover, in a certain sense he is still our contemporary: there are people whom we still consider more closely related to primitive man than to ourselves, in whom we therefore recognize the direct descendants and representatives of earlier man. We can thus judge the so-called savage and semi-savage races; their psychic life assumes a peculiar interest for us, for we can recognize in their psychic life a well-preserved, early stage of our own development.
@@ -861,7 +879,7 @@
 						<article class="content__item">
 							<span class="category category--full">Philosophy</span>
 							<h2 class="title title--full">Life Ends. Period.</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
 								<span class="meta__author">Christian Belverde</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -872,6 +890,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
 							<p>The slip of the tongue shows that on account of unconscious inhibitions the individual concerned is unable to express his true thoughts; the dream is a distorted or plain expression of those wishes which are prohibited in the waking states, and the witticism, owing to its veiled or indirect way of expression, enables the individual to obtain pleasure from forbidden sources. But whereas dreams, witticisms, and faulty actions give evidences of inner conflicts which the individual overcomes, the neurotic or psychotic symptom is the result of a failure and represents a morbid adjustment.</p>
@@ -884,7 +903,7 @@
 						<article class="content__item">
 							<span class="category category--full">Society</span>
 							<h2 class="title title--full">The Hunger of a Teenager</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
 								<span class="meta__author">Carol Freeman</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -895,6 +914,7 @@
 									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
+							</div>
 							</div>
 							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
 							<p>This becomes even plainer in the case of a guilty conscience, where we become aware of the inner condemnation of such acts which realized some of our definite wish impulses. Confirmation seems superfluous here; whoever has a conscience must feel in himself the justification of the condemnation, and the reproach for the accomplished action. But this same character is evinced by the attitude of savages towards taboo. Taboo is a command of conscience, the violation of which causes a terrible sense of guilt which is as self-evident as its origin is unknown[89].</p>
@@ -907,7 +927,7 @@
 						<article class="content__item">
 							<span class="category category--full">Mental Health</span>
 							<h2 class="title title--full">Disorders are the New Order</h2>
-							<div class="meta meta--full">
+							<div class="meta meta--full"> <div class="meta--wrapper">
 								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
 								<span class="meta__author">Sandra Paulson</span>
 								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
@@ -919,6 +939,7 @@
 									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
 								</nav>
 							</div>
+							</div>
 							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
 							<p>The slip of the tongue shows that on account of unconscious inhibitions the individual concerned is unable to express his true thoughts; the dream is a distorted or plain expression of those wishes which are prohibited in the waking states, and the witticism, owing to its veiled or indirect way of expression, enables the individual to obtain pleasure from forbidden sources. But whereas dreams, witticisms, and faulty actions give evidences of inner conflicts which the individual overcomes, the neurotic or psychotic symptom is the result of a failure and represents a morbid adjustment.</p>
 							<p>The aforementioned psychic formations are therefore nothing but manifestations of the struggle with reality, the constant effort to adjust one’s primitive feelings to the demands of civilization. In spite of all later development the individual retains all his infantile psychic structures. Nothing is lost; the infantile wishes and primitive impulses can always be demonstrated in the grown-up and on occasion can be brought back to the surface. In his dreams the normal person is constantly reviving his childhood, and the neurotic or psychotic individual merges back into a sort of psychic infantilism through his morbid productions. The unconscious mental activity which is made up of repressed infantile material for ever tries to express itself. Whenever the individual finds it impossible to dominate the difficulties of the world of reality there is a regression to the infantile, and psychic disturbances ensue which are conceived as peculiar thoughts and acts. Thus the civilized adult is the result of his childhood or the sum total of his early impressions; psychoanalysis thus confirms the old saying: The child is father to the man.</p>
@@ -928,7 +949,7 @@
 							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
 						</article>
 					</div>
-					<button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+					<button class="close-button close-button--show"><i class="fa fa-close"></i><span>Close</span></button>
 				</section>
 			</div>
 		</div><!-- /container -->
