@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Grid Item Animation Layout - Demo 1</title>
-		<meta name="description" content="A responsive, magazine-like website layout with a grid item animation effect when opening the content" />
-		<meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/SantasSleigh/SantasSleigh.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-			<div class="topnav">
-					<nav>
-						<a href="/story.html">The story behind.</a>
-						<a href="/intro.html">Introduction</a>
-					</nav>
-				</div>
-		<div class="container">
-			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
-			<div id="theSidebar" class="sidebar">
-				<button class="close-button fa fa-fw fa-close"></button>
-				<h1><span>The story</span>behind.</h1><br><br>
-				<nav class="Franzis_playground">
-					<a class="Franzis_playground" href="Franzis_playground.html">take me back to main</a>
-				</nav>
-				</div>
-				<div id="theGrid" class="main">
-						<section class="grid">
-						<a class="grid__item" href="#">
-								<h1 class="title title--preview">Titlexy</h1>
-								<p>where on earth is my text?????</p>
-								<div class="loader"></div>
 
-								</div>
-				<section class="content">
-					<div class="scroll-wrap">
-						<article class="content__item">
-							</article>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid Item Animation Layout - Demo 2</title>
+	<meta name="description" content="A responsive, magazine-like website layout with a grid item animation effect when opening the content" />
+	<meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/SantasSleigh/SantasSleigh.css" />
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/snowstorm.js"></script>
+</head>
+
+<body class="view-single noscroll">
+	<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+	<div class="topnav">
+		<nav>
+			<a href="story.html">The story behind.</a>
+			<a href="intro.html">Introduction</a>
+		</nav>
+	</div>
+	<div id="theSidebar" class="sidebar">
+		<button class="close-button fa fa-fw fa-close"></button>
+	</div>
+	<div id="theGrid" class="main">
+		<section class="grid">
+			<a class="grid__item grid__item--loading grid__item--animate" href="#">
+				<h1 class="title title--preview">13</h1>
+				<div class="loader"></div>
+				<span class="category">Franzis favourite dish as a child!</span>
+				<div class="meta meta--preview">
+					<img class="meta__avatar" src="./img/pictures/potato_13.jpg" alt="potato" />
+					<span class="meta__date"><i class="fa fa-calendar-o"></i> 13th December</span>
+					<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 20 minutes cooking </span>
+				</div>
+			</a>
+			<div class="placeholder placeholder--trans-out" style="transform: translate3d(-5px, -5px, 0px);"></div>
+
+		</section>
+		<section class="content content--show">
+			<div class="scroll-wrap">
+
+				<article class="content__item content__item--show">
+					<span class="category category--full">Mental Health</span>
+					<h2 class="title title--full">Disorders are the New Order</h2>
+					<div class="meta meta--full">
+						<div class="meta--wrapper">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+							<span class="meta__author">Sandra Paulson</span>
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+							<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 54 comments</span>
+							<span class="meta__misc"><i class="fa fa-heart"></i> 278 favorites</span>
+							<nav class="article-nav">
+								<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+								<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+							</nav>
+						</div>
 					</div>
-					<button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
-				</section>
+					<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or
+						psychotic manifestations represent efforts at adjustment to one’s environment. </p>
+						<p><a href="index.html">Back to the calendar...</a></p>
+				</article>
+			</div>
+			<button class="close-button close-button--show"><i class="fa fa-close"></i><span>Close</span></button>
+		</section>
+	</div>
+	</div><!-- /container -->
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+</body>
 
-				<script src="js/classie.js"></script>
-		<script src="js/main.js"></script>
-	</body>
 </html>
