@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2015, Codrops
  * http://www.codrops.com
  */
@@ -44,6 +44,15 @@
 		menuCtrl = document.getElementById('menu-toggle'),
 		menuCloseCtrl = sidebarEl.querySelector('.close-button');
 
+		/**
+		 * Date check functionality
+		 */
+
+		 var date = new Date();
+		 var today = date.getDate();
+
+
+
 	/**
 	 * gets the viewport width and height
 	 * based on http://responsejs.com/labs/dimensions/
@@ -58,7 +67,7 @@
 			client = docElem['clientHeight'];
 			inner = window['innerHeight'];
 		}
-		
+
 		return client < inner ? inner : client;
 	}
 	function scrollX() { return window.pageXOffset || docElem.scrollLeft; }
@@ -71,6 +80,9 @@
 	function initEvents() {
 		[].slice.call(gridItems).forEach(function(item, pos) {
 			// grid item click event
+			var itemDay = item.querySelector('.title');
+			var itemDayValue = itemDay.textContent;
+			if (today >= itemDayValue) {
 			item.addEventListener('click', function(ev) {
 				ev.preventDefault();
 				if(isAnimating || current === pos) {
@@ -87,6 +99,12 @@
 					setTimeout(function() { loadContent(item); }, 500);
 				}, 1000);
 			});
+			} else {
+				item.addEventListener('click', function(ev) {
+					ev.preventDefault();
+					alert("You're too curious! Fuck off!");
+				});
+			}
 		});
 
 		closeCtrl.addEventListener('click', function() {
@@ -110,7 +128,7 @@
 		// hamburger menu button (mobile) and close cross
 		menuCtrl.addEventListener('click', function() {
 			if( !classie.has(sidebarEl, 'sidebar--open') ) {
-				classie.add(sidebarEl, 'sidebar--open');	
+				classie.add(sidebarEl, 'sidebar--open');
 			}
 		});
 
@@ -122,7 +140,7 @@
 	}
 
 	function loadContent(item) {
-		// add expanding element/placeholder 
+		// add expanding element/placeholder
 		var dummy = document.createElement('div');
 		dummy.className = 'placeholder';
 
@@ -130,12 +148,12 @@
 		dummy.style.WebkitTransform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
 		dummy.style.transform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
 
-		// add transition class 
+		// add transition class
 		classie.add(dummy, 'placeholder--trans-in');
 
 		// insert it after all the grid items
 		gridItemsContainer.appendChild(dummy);
-		
+
 		// body overlay
 		classie.add(bodyEl, 'view-single');
 
@@ -148,7 +166,7 @@
 		}, 25);
 
 		onEndTransition(dummy, function() {
-			// add transition class 
+			// add transition class
 			classie.remove(dummy, 'placeholder--trans-in');
 			classie.add(dummy, 'placeholder--trans-out');
 			// position the content container
@@ -191,7 +209,7 @@
 				lockScroll = false;
 				window.removeEventListener( 'scroll', noscroll );
 			});
-			
+
 			// reset current
 			current = -1;
 		}, 25);
